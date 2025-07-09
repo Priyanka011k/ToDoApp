@@ -1,0 +1,102 @@
+*body{
+    margin: 0;
+    padding: 0 auto;
+}
+.navbar{
+    width: 100%;
+    background-color: blueviolet;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.navbar h2{
+    color: white;
+
+}
+.input-bar{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-bar input{
+    padding: 10px;
+}
+.input-bar input:first-child{
+    width: 300px;
+}
+
+.input-bar button{
+    padding: 14px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.mytable{
+    width: 100%;
+}
+.sidebar{
+    width: 270px;
+    background-color: blue;
+    height: 100vh;
+    position: fixed;
+    margin-left: -270px;
+    transition: all 0.5s ease-in-out;
+
+}
+.menubtn{
+   position: fixed;
+   top: 0;
+   margin-top: 20px;
+   margin-left: 20px;
+   left: 20;
+   cursor: pointer;
+}
+
+
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.sidebar a, .sidebar button {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar button:hover, .sidebar a:hover {
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}

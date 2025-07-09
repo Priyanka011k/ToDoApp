@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <input type="text" id="task">
+    <input type="date" id="date">
+    <button onclick="update()">update</button>
+
+
+    <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    location.href = "login.html";
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const currentUser = localStorage.getItem("currentUser");
+        const key = `tasks_${currentUser}`;
+
+
+
+        const data = JSON.parse(localStorage.getItem('mytaskdata'));
+        const index = JSON.parse(localStorage.getItem('index'));
+        const mytask = document.getElementById('task');
+        const mydate = document.getElementById('date');
+        mytask.value =data[index].task;
+        mydate.value = data[index].date;
+
+        function update(){
+            data[index].task = mytask.value;
+            data[index].date  = mysate.value;
+            localStorage.setItem('mytaskdata', JSON.stringify(data));
+            alert('details updated');
+            location.href = "index.html";
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
